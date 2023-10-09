@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-white">
+
+    <!-- nav-bar  -->
+<nav class="bg-white border-gray-200 dark:bg-white">
+    <!-- logo  -->
+    <div class="mx-[150px] flex items-center justify-between p-4">
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/images/fkheaderlogo-025be3.svg" class="h-8 mr-6" alt="Flowbite Logo" />
+
+      <!-- search  -->
+            <form>   
+                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"></label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg class="rounded w-7 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </div>
+                    <input type="search" class="block p-3 pl-10 text-sm text-gray-900 border border-0 bg-blue-50 focus:ring-blue-500 focus:border-blue-500 
+                    dark:bg-blue-70 dark:border-blue-70 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." style="width: 22vw" required>
+                </div>
+            </form>
+
+<!-- left-side list -->
+
+      <div class="w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-white-800 md:dark:bg-white-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500
+             dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                <i class="fas fa-store text-gray-500"></i>
+                 <span class="text-gray-500">become a seller</span>
+            </a>
+          </li>
+          <li>       
+                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  text-center inline-flex items-center " type="button"> 
+                    <i class="far fa-user mr-1 text-gray-500"></i> 
+                    <span class="text-gray-500">Sign-in</span>
+                    <svg class="w-2.5  ml-2.5 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownHover" class="z-30 hidden bg-white divide-y divide-white-100 rounded-lg shadow w-44 dark:bg-white-700">
+                    <div class="px-4 py-2 text-sm text-gray-900 dark:text-white">
+                        <div class="font-medium truncate text-black">new user?
+                            <span class="text-blue-500 ml-6">sign up</span>
+                        </div>
+                      </div>
+                    <ul class="py-2 text-sm text-gray-500" aria-labelledby="dropdownHoverButton">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-70 ">My Profile</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-70 ">Flipkart Plus Zone</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-70 ">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-70 ">Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-70 ">Rewards</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-70 ">Gift Cards</a>
+                    </li>
+                    </ul>
+                </div>
+
+
+<!-- Dropdown menu -->
+<!-- <div id="dropdownInformation" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+    </ul>
+    <div class="py-2">
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+    </div>
+</div> -->
+
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                <i class="fas fa-shopping-cart text-gray-500"></i>
+                <span class="text-gray-500">cart</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="max-width: 100vw;display: flex; align-items: center;flex-direction: column;">
+
+  <!-- preview cards -->
+    <div class="mx-4 my-5 border-0 rounded-lg shadow dark:bg-white-700 dark:border-gray-500 w-full px-20 flex justify-between" 
+    style="max-width: 1600px">     
+        
+            <div class="p-3 text-center">
+                <img src="first/1.png" class="mx-auto"/>
+                <p>Grocery</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/2.webp" class="mx-auto"/>
+                <p>Mobiles</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/3.webp" class="mx-auto"/>
+                <p class="mt-1">Fashion</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/4.webp" class="mx-auto"/>
+                <p>Electronics</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/5.webp" class="mx-auto"/>
+                <p>Home & Furniture</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/6.webp" class="mx-auto"/>
+                <p>Appliances</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/7.webp" class="mx-auto"/>
+                <p>Travel</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/8.webp" class="mx-auto"/>
+                <p>Beauty, Toy & More</p>
+            </div>
+            <div class="p-3 text-center">
+                <img src="first/9.webp" class="mx-auto"/>
+                <p>Two Wheelers</p>
+            </div>
+        
+    </div>
+
+<!-- auto slides -->
+    <div id="default-carousel" class="relative w-full my-3" data-carousel="slide" style="max-width: 1600px">
+        <!-- Carousel wrapper -->
+        <div class="relative overflow-hidden rounded-lg h-60">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="second/1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="second/2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="second/3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="second/4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <svg class="w-5 h-5 text-white dark:text-white-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <svg class="w-5 h-5 text-white dark:text-white-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                
+            </span>
+        </button>
+    </div>
+
+   <!-- promo   -->
+    <div class="relative w-full grid grid-cols-6 gap-2 bg-white my-2 " style="max-width: 1600px">
+        
+        <div class="relative overflow-hidden rounded-lg h-80 border  col-span-5">
+<!-- title -->
+            <div class="pl-7 pr-5 py-2 flex justify-between">
+                <strong class="text-2xl">Best of Electronics</strong>
+                <button type="button" >
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                    group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                        <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>   
+<!-- slide  -->
+            <div id="animation-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-60 overflow-hidden rounded-lg ">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-200 ease-linear" data-carousel-item>
+                        <div class="flex flex-row mx-20 justify-between">
+
+                            <div class="p-3 text-center border h-[220px] ">
+                                    <img src="third/1.webp" 
+                                    class="mx-auto object-cotain hover:scale-105"/>                       
+                                    <p class="text ">Monitors</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="third/2.webp" 
+                                class="mx-auto hover:scale-105 max-w-200 object-cotain"/>                       
+                                <p class="text mt-10">Printer</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="third/3.webp" 
+                                class="mx-auto hover:scale-105 h-[150px]"/>                       
+                                <p class="text mt-3">Seagate One Touch</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="third/6.webp" 
+                                class="mx-auto hover:scale-105 mt-5"/>                       
+                                <p class="text mt-12">Top Selling Dell Keyboard</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="third/4.webp" 
+                                class="mx-auto hover:scale-105 w-[120px]" style="margin-top: -9px;"/>                       
+                                <p class="text ">Best Selling Security</p>
+                            </div>                                                                                 
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-200 ease-linear" data-carousel-item>
+                        <div class="flex flex-row mx-20">
+                            <div class="p-3 text-center border h-[220px] mr-3">
+                                <img src="third/5.webp" 
+                                class="mx-auto hover:scale-105 w-40"/>                       
+                                <p class="text mt-5">SanDisk Ultra</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="third/7.webp" 
+                                class="mx-auto hover:scale-105 w-45"/>                       
+                                <p class="text mt-6">Wireless Mouse & Keyboard</p>
+                            </div> 
+                        </div>
+                     </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+                </button>
+                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        
+                    </span>
+                </button>
+            </div>
+        </div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/530/810/image/3d79da3c6b16eccb.jpg?q=80" class="w-full h-[340px]" style="margin-top: -10px;">
+    </div>
+
+    <!-- Food & Accessories -->
+    <div class="relative w-full bg-white " style="max-width: 1600px">
+        
+        <div class="relative overflow-hidden rounded-lg h-80 border">
+<!-- title -->
+            <div class="px-7 py-3 flex justify-between">
+                <strong class="text-lg">Food & Accessories</strong>
+                <button type="button" >
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                    group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                        <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>   
+<!-- slide  -->
+            <div id="animation-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-60 overflow-hidden rounded-lg">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-200 ease-linear" data-carousel-item>
+                        <div class="flex flex-row mx-20 justify-between">
+
+                            <div class="p-3 text-center border h-[220px]">
+                                    <img src="fourth/2.webp" 
+                                    class="h-[170px] mx-9 hover:scale-105" />                       
+                                    <p class="mt-1">Dry Fruits</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="fourth/3.webp" 
+                                class="mx-auto max-w-200 object-cotain hover:scale-105"/>                       
+                                <p class="text mt-8">Geared Cycles</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="fourth/4.webp" 
+                                class="mx-5 h-[150px] hover:scale-105"/>                       
+                                <p class="text mt-6">Rider Helmets </p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="fourth/5.webp" 
+                                class="mx-3 w-[170px] hover:scale-105"/>                       
+                                <p class="text mt-1">Top Selling Stationery</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="fourth/6.webp" 
+                                class="mx-2 w-[170px] hover:scale-105"/>                       
+                                <p class="text mt-3">Soft Toys</p>
+                            </div>  
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="fourth/7.webp" 
+                                class="mx-2 w-[170px] hover:scale-105"/>                       
+                                <p class="text mt-5">Gym Essentials</p>
+                            </div> 
+                                                                                
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-200 ease-linear" data-carousel-item>
+                        <div class="flex flex-row mx-20">
+                            <div class="p-3 text-center border h-[220px] mr-3">
+                                <img src="fourth/8.webp" 
+                                class="mx-auto w-40 hover:scale-105"/>                       
+                                <p class="text mt-5">Tyres</p>
+                            </div>
+                            <div class="p-3 text-center border h-[220px]">
+                                <img src="fourth/1.webp" 
+                                class="mx-3 w-[140px] hover:scale-105"/>   
+                                <!-- Tricycles & Rideons     -->
+                                <p class="text ">Batman</p>
+                            </div>  
+                        </div>
+                     </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+                </button>
+                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- col 3 div  -->
+    <div class="relative w-full bg-white flex flex-row justify-between mt-5" style="max-width: 1600px">
+
+        <!-- one building  -->
+        <div class="w-[525px] border">
+            <!-- title -->
+            <div class="px-7 py-3 flex justify-between">
+                <strong class="text-lg">Festive Wear</strong>
+                <button type="button" >
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                    group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                        <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                    </span>
+                </button>
+            </div> 
+
+            <!-- 4 -->
+            <div class="flex flex-row p-3">
+                <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                    <img src="3-col-div/1/1.webp" 
+                    class="mx-auto w-[120px] hover:scale-105"/>                       
+                    <p class="text mt-2">Wrist Watches</p>
+                </div>
+                <div class="p-3 text-center border h-[220px] w-1/2">
+                    <img src="3-col-div/1/2.webp" 
+                    class="mx-auto w-[170px] hover:scale-105"/>                       
+                    <p class="text">Necklaces</p>
+                </div>
+            </div>
+            <div class="flex flex-row p-3">
+                <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                    <img src="3-col-div/1/3.webp" 
+                    class="mx-auto w-6 hover:scale-105"/>                       
+                    <p class="text mt-2">Accessories</p>
+                </div>
+                <div class="p-3 text-center border h-[220px] w-1/2">
+                    <img src="3-col-div/1/4.webp" 
+                    class="mx-auto w-[130px] hover:scale-110"/>                       
+                    <p class="text mt-1">Women's Sarees</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[525px] border">
+            <!-- title -->
+            <div class="px-7 py-3 flex justify-between">
+                <strong class="text-lg">Home Decor & Furnishings</strong>
+                <button type="button" >
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                    group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                        <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                    </span>
+                </button>
+            </div> 
+
+            <!-- 4 -->
+            <div class="flex flex-row p-3">
+                <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                    <img src="3-col-div/2/1.webp" 
+                    class="mx-auto w-[160px] hover:scale-110"/>                       
+                    <p class="text mt-2">Torches</p>
+                </div>
+                <div class="p-3 text-center border h-[220px] w-1/2">
+                    <img src="3-col-div/2/2.webp" 
+                    class="mx-auto w-[200px] hover:scale-110"/>                       
+                    <p class="text mt-2">Plants Saplings</p>
+                </div>
+            </div>
+            <div class="flex flex-row p-3">
+                <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                    <img src="3-col-div/2/3.webp" 
+                    class="mx-auto w-[160px] hover:scale-110"/>                       
+                    <p class="text mt-2">Blankets</p>
+                </div>
+                <div class="p-3 text-center border h-[220px] w-1/2">
+                    <img src="3-col-div/2/4.webp" 
+                    class="mx-auto w-[160px] hover:scale-110"/>                       
+                    <p class="text mt-2">Shoe Racks & More</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[525px] border">
+            <!-- title -->
+            <div class="px-7 py-3 flex justify-between">
+                <strong class="text-lg">New styles for Her</strong>
+                <button type="button" >
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                    group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                        <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                    </span>
+                </button>
+            </div> 
+
+            <!-- 4 -->
+            <div class="flex flex-row p-3">
+                <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                    <img src="3-col-div/1/1.webp" 
+                    class="mx-auto w-[120px] hover:scale-110"/>                       
+                    <p class="text mt-2">Wrist Watches</p>
+                </div>
+                <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                    <img src="3-col-div/1/3.webp" 
+                    class="mx-auto w-6 hover:scale-110"/>                       
+                    <p class="text mt-2">Accessories</p>
+                </div>
+            </div>
+            <div class="flex flex-row p-3">
+                <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                    <img src="fith/9.webp" 
+                    class="mx-auto mt-14 w-[180px] hover:scale-110"/>                       
+                    <p class="text mt-5">NIKE</p>
+                </div>
+                <div class="p-3 text-center border h-[220px] w-1/2">
+                    <img src="fith/10.webp" 
+                    class="mx-auto mt-10 w-[180px] hover:scale-110"/>                       
+                    <p class="text mt-2">Crocs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- sports, healthcare -->
+ <div class="relative w-full bg-white mt-5" style="max-width: 1600px">
+        
+    <div class="relative overflow-hidden rounded-lg h-80 border">
+<!-- title -->
+        <div class="px-7 py-3 flex justify-between">
+            <strong class="text-lg">Sports, Healthcare & more</strong>
+            <button type="button" >
+                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                    <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div>   
+<!-- slide  -->
+        <div id="animation-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-60 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                    <div class="flex flex-row mx-20 justify-between">
+
+                        <div class="p-3 text-center border h-[220px]">
+                                <img src="fith/1.webp" 
+                                class="mx-auto w-[160px] hover:scale-110"/>                       
+                                <p class="text mt-2">Treadmill, Exercise Bikes &</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/2.webp" 
+                            class="mx-auto max-w-200 object-cotain hover:scale-110"/>                       
+                            <p class="text mt-11">Yoga Mat</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/3.webp" 
+                            class="mx-auto h-[150px] hover:scale-110"/>                       
+                            <p class="text mt-3">Musical Keyboards</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/4.webp" 
+                            class="mx-5 h-[150px] hover:scale-110"/>                       
+                            <p class="text mt-3">String Instruments</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/5.webp" 
+                            class="mx-7 h-[160px] hover:scale-110"/>                       
+                            <p class="text mt-2">Microphones</p>
+                        </div>  
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/6.webp" 
+                            class="mx-auto h-[160px] hover:scale-110"/>                       
+                            <p class="text mt-2">Car pressure washer</p>
+                        </div>                                                      
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                    <div class="flex flex-row mx-20">
+                        <div class="p-3 text-center border h-[220px] mr-3">
+                            <img src="fith/7.webp" 
+                            class="mx-auto w-40 mt-5 hover:scale-110"/>                       
+                            <p class="text mt-5">Non-Greared Cycles</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/8.webp" 
+                            class="mx-5 h-[150px] hover:scale-110"/>                       
+                            <p class="text">Tea</p>
+                        </div> 
+                    </div>
+                 </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="relative w-full bg-white flex flex-row justify-between mt-5" style="max-width: 1600px">
+
+    <!-- one building  -->
+    <div class="w-[525px] border">
+        <!-- title -->
+        <div class="px-7 py-3 flex justify-between">
+            <strong class="text-lg">Festive Wear</strong>
+            <button type="button" >
+                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                    <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div> 
+
+        <!-- 4 -->
+        <div class="flex flex-row p-3">
+            <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                <img src="6th/1.webp" 
+                class="mx-auto w-[120px] hover:scale-110"/>                       
+                <p class="text mt-2">Highstar & Roadster...</p>
+            </div>
+            <div class="p-3 text-center border h-[220px] w-1/2">
+                <img src="6th/2.webp" 
+                class="mx-auto w-[170px] hover:scale-105"/>                       
+                <p class="text">Messenger Bags</p>
+            </div>
+        </div>
+        <div class="flex flex-row p-3">
+            <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                <img src="6th/3.webp" 
+                class="mx-auto w-[150px] hover:scale-110"/>                       
+                <p class="text mt-5">Jewellery Sets</p>
+            </div>
+            <div class="p-3 text-center border h-[220px] w-1/2">
+                <img src="6th/4.webp" 
+                class="mx-auto w-[110px] hover:scale-110"/>                       
+                <p class="text mt-2">Men's T-shirts</p>
+            </div>
+        </div>
+    </div>
+
+    <img src="second/p2.webp" class="w-[1060px] h-[550px] object-cover">
+</div>
+
+<div class="relative w-full bg-white mt-5" style="max-width: 1600px">
+        
+    <div class="relative overflow-hidden rounded-lg h-80 border">
+<!-- title -->
+        <div class="px-7 py-3 flex justify-between">
+            <strong class="text-lg">Sports, Healthcare & more</strong>
+            <button type="button" >
+                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                    <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div>   
+<!-- slide  -->
+        <div id="animation-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-60 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                    <div class="flex flex-row mx-20 justify-between">
+
+                        <div class="p-3 text-center border h-[220px]">
+                                <img src="fith/1.webp" 
+                                class="mx-auto w-[160px]"/>                       
+                                <p class="text mt-2">Treadmill, Exercise Bikes &</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/2.webp" 
+                            class="mx-auto max-w-200 object-cotain"/>                       
+                            <p class="text mt-11">Yoga Mat</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/3.webp" 
+                            class="mx-auto h-[150px]"/>                       
+                            <p class="text mt-3">Musical Keyboards</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/4.webp" 
+                            class="mx-5 h-[150px]"/>                       
+                            <p class="text mt-3">String Instruments</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/5.webp" 
+                            class="mx-7 h-[160px]"/>                       
+                            <p class="text mt-2">Microphones</p>
+                        </div>  
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/6.webp" 
+                            class="mx-auto h-[160px]"/>                       
+                            <p class="text mt-2">Car pressure washer</p>
+                        </div>                                                      
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                    <div class="flex flex-row mx-20">
+                        <div class="p-3 text-center border h-[220px] mr-3">
+                            <img src="fith/7.webp" 
+                            class="mx-auto w-40 mt-5"/>                       
+                            <p class="text mt-5">Non-Greared Cycles</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/8.webp" 
+                            class="mx-5 h-[150px]"/>                       
+                            <p class="text">Tea</p>
+                        </div> 
+                    </div>
+                 </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="relative w-full bg-white flex justify-between mt-5 " style="max-width: 1600px;">
+
+    <!-- one building  -->
+    <div class="w-[500px] mr-3 border">
+        <!-- title -->
+        <div class="px-7 py-3 flex justify-between">
+            <strong class="text-lg">Best Moblie </strong>
+            <button type="button" >
+                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                    <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div> 
+
+        <!-- 4 -->
+        <div class="flex flex-row p-3">
+            <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                <img src="6th/5.webp" 
+                class="mx-auto w-[120px]"/>                       
+                <p class="mt-3">Motorola Edge</p>
+            </div>
+            <div class="p-3 text-center border h-[220px] w-1/2">
+                <img src="6th/6.webp" 
+                class="mx-auto w-[120px]"/>                       
+                <p class="mt-2">Motorola G54</p>
+            </div>
+        </div>
+        <div class="flex flex-row p-3">
+            <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                <img src="6th/7.webp" 
+                class="mx-auto w-[130px]"/>                       
+                <p class="mt-2">Vivo T2 5G</p>
+            </div>
+            <div class="p-3 text-center border h-[220px] w-1/2">
+                <img src="6th/8.webp" 
+                class="mx-auto w-[130px]"/>                       
+                <p class="mt-2">Google Pixel 7a</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[500px] mr-3 border">
+        <!-- title -->
+        <div class="px-7 py-3 flex justify-between">
+            <strong class="text-lg">Top Shoes</strong>
+            <button type="button" >
+                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                    <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div> 
+
+        <!-- 4 -->
+        <div class="flex flex-row p-3">
+            <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                <img src="7th/1.webp" 
+                class="mx-auto w-[120px]"/>                       
+                <p class="text mt-2">DSC & more</p>
+            </div>
+            <div class="p-3 text-center border h-[220px] w-1/2">
+                <img src="7th/2.webp" 
+                class="mx-auto w-[170px]"/>                       
+                <p class="text">Wildcraft...</p>
+            </div>
+        </div>
+        <div class="flex flex-row p-3">
+            <div class="p-3 text-center border h-[220px] w-1/2 me-3">
+                <img src="7th/3.webp" 
+                class="mx-auto w-[140px]"/>                       
+                <p class="text mt-2">ADIDAS</p>
+            </div>
+            <div class="p-3 text-center border h-[220px] w-1/2">
+                <img src="7th/4.webp" 
+                class="mx-auto mt-2 w-[150px]"/>                       
+                <p class="text mt-4">HRX, FILA & More</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="second/p1.webp" class=" h-[550px]">
+    </div>
+</div>
+
+<div class="relative w-full bg-white mt-5" style="max-width: 1600px">
+        
+    <div class="relative overflow-hidden rounded-lg h-80 border">
+<!-- title -->
+        <div class="px-7 py-3 flex justify-between">
+            <strong class="text-lg">Sports, Healthcare & more</strong>
+            <button type="button" >
+                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/30 dark:bg-blue-500 group-hover:bg-white/50 dark:group-hover:bg-blue-700
+                group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray group-focus:outline-none">
+                    <svg class="w-3 h-3 text-white dark:text-white-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div>   
+<!-- slide  -->
+        <div id="animation-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-60 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                    <div class="flex flex-row mx-20 justify-between">
+
+                        <div class="p-3 text-center border h-[220px]">
+                                <img src="fith/1.webp" 
+                                class="mx-auto w-[160px]"/>                       
+                                <p class="text mt-2">Treadmill, Exercise Bikes &</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/2.webp" 
+                            class="mx-auto max-w-200 object-cotain"/>                       
+                            <p class="text mt-11">Yoga Mat</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/3.webp" 
+                            class="mx-auto h-[150px]"/>                       
+                            <p class="text mt-3">Musical Keyboards</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/4.webp" 
+                            class="mx-5 h-[150px]"/>                       
+                            <p class="text mt-3">String Instruments</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/5.webp" 
+                            class="mx-7 h-[160px]"/>                       
+                            <p class="text mt-2">Microphones</p>
+                        </div>  
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/6.webp" 
+                            class="mx-auto h-[160px]"/>                       
+                            <p class="text mt-2">Car pressure washer</p>
+                        </div>                                                      
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                    <div class="flex flex-row mx-20">
+                        <div class="p-3 text-center border h-[220px] mr-3">
+                            <img src="fith/7.webp" 
+                            class="mx-auto w-40 mt-5"/>                       
+                            <p class="text mt-5">Non-Greared Cycles</p>
+                        </div>
+                        <div class="p-3 text-center border h-[220px]">
+                            <img src="fith/8.webp" 
+                            class="mx-5 h-[150px]"/>                       
+                            <p class="text">Tea</p>
+                        </div> 
+                    </div>
+                 </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <svg class="w-5 h-5 text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="bg-blue-50 mt-2">
+    
+    <div class="mx-1">
+        <h2 class="my-2">Large Appliances</h2>
+        <p class="border border-b-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt earum voluptatum rem pariatur tempore aliquam quam porro reprehenderit sequi numquam harum maxime quas odio, voluptates placeat unde beatae consectetur at. Cum ipsum et quidem qui dolor sapiente atque a laboriosam nostrum provident rerum deserunt minus corporis assumenda, nobis nemo sint?</p>
+
+        <h2 class="my-2">Small Home Appliences</h2>
+        <p class="border border-b-gray-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt earum voluptatum rem pariatur tempore aliquam quam porro reprehenderit sequi numquam harum maxime quas odio, voluptates placeat unde beatae consectetur at. Cum ipsum et quidem qui dolor sapiente atque a laboriosam nostrum provident rerum deserunt minus corporis assumenda, nobis nemo sint?</p>
+
+        <h2 class="my-2">Lifestyle</h2>
+        <p class="border border-b-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt earum voluptatum rem pariatur tempore aliquam quam porro reprehenderit sequi numquam harum maxime quas odio, voluptates placeat unde beatae consectetur at. Cum ipsum et quidem qui dolor sapiente atque a laboriosam nostrum provident rerum deserunt minus corporis assumenda, nobis nemo sint?
+        </p>
+
+        <h2 class="my-2">Home & Furniture</h2>
+        <p class="border border-b-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi beatae vero voluptates eius iste nesciunt atque repudiandae corporis, et perferendis. Vel aliquid magnam ducimus. Praesentium vero incidunt reiciendis quod? Minus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt earum voluptatum rem pariatur tempore aliquam quam porro reprehenderit sequi numquam harum maxime quas odio, voluptates placeat unde beatae consectetur at. Cum ipsum et quidem qui dolor sapiente atque a laboriosam nostrum provident rerum deserunt minus corporis assumenda, nobis nemo sint?
+        </p>
+
+        <h2 class="my-2">Baby & kids</h2>
+        <p class="border border-b-gray-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt earum voluptatum rem pariatur tempore aliquam quam porro reprehenderit sequi numquam harum maxime quas odio, voluptates placeat unde beatae consectetur at. Cum ipsum et quidem qui dolor sapiente atque a laboriosam nostrum provident rerum deserunt minus corporis assumenda, nobis nemo sint?</p>
+        
+        <h2 class="my-2 ">Books, Sports & Games</h2>
+        <p class="border border-b-gray-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt earum voluptatum rem pariatur tempore aliquam quam porro reprehenderit sequi numquam harum maxime quas odio, voluptates placeat unde beatae consectetur at. Cum ipsum et quidem qui dolor sapiente atque a laboriosam nostrum provident rerum deserunt minus corporis assumenda, nobis nemo sint?</p>
+
+    </div>
+</div>
+
+<div class="text-sm bg-black w-full text-white px-12 py-7 flex justify-between">
+            <div>
+                <ul class="p-3">
+                    <li class="text-gray-400">ABOUT</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Cleartrip</li>
+                    <li>Corporate Information</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="p-3">
+                    <li class="text-gray-400">HELP</li>
+                    <li>Payments</li>
+                    <li>Cancellations &</li>
+                    <li>Returns</li>
+                    <li>FAQ</li>
+                    <li>Report</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="p-3">
+                    <li class="text-gray-400">CONSUMER POLICIY</li>
+                    <li>Cancellations &</li>
+                    <li>Returns</li>
+                    <li>Terms Of Use</li>
+                    <li>Security</li>
+                    <li>Sitemap</li>
+                    <li>Grievance Redressal</li>
+                    <li>EPR Compliance</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="p-3">
+                    <li class="text-gray-400">SOCIAL</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTude</li>
+                    
+                </ul>
+        </div>
+        <!-- contant -->
+            <div style="border-left: 0.5px solid grey;">
+                <ul class="p-3">
+                    <li class="text-gray-400">Mail Us:</li>
+                    <li>Flipkart Internet Private Limited,</li>
+                    <li>Buildings Alyssa, Begonia &</li>
+                    <li>Clove Embassy Tech Village</li>
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru, 560103, Karnataka, India</li>                 
+                </ul>
+            </div>
+            <div>
+                <ul class="p-3">
+                    <li class="text-gray-400">Registered Office Address:</li>
+                    <li>Flipkart Internet Private Limited,</li>
+                    <li>Buildings Alyssa, Begonia &</li>
+                    <li>Clove Embassy Tech Village</li>
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru, 560103, Karnataka, India</li>                 
+                    <li>CIN: U51109KA2911PT3415</li>                 
+                    <li>Telephone: 044-432245257</li>                 
+                </ul>
+            </div>
+
+
+</div>
+
+<footer class="bg-black text-white w-full " style="border-top: 0.5px solid grey;">
+    <div class="mx-12 flex justify-between py-3 text-xs">
+        <span>
+            <i class="fa-solid fa-store text-red-300"></i>
+            Become a Seller</span>
+        <span>
+            <i class="fa-regular fa-star text-red-400"></i>
+            Advertise</span>
+        <span>
+            <i class="fa-solid fa-gift text-red-500"></i>
+            Gift Card</span>
+        <span>
+            <i class="fa-solid fa-circle-question text-red-400"></i>
+            Help Center</span>
+        <span>
+            <i class="fa-regular fa-copyright"></i>
+            2007-2023 Flipkart.com</span>
+
+        <img src="test.svg" alt="">
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
